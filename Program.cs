@@ -187,22 +187,27 @@ class Program
             Console.WriteLine("Щоб повернутися в меню,введіть число 0.");
             choice = int.Parse(Console.ReadLine());
 
-          
+            Stopwatch sw = Stopwatch.StartNew();
+            sw.Stop();
             switch (choice)
             {
                 case 1:
+                    sw.Restart();
                     Console.WriteLine("Виконую завдання 1");
                     Task2_1();
+                    sw.Stop();
                     break;
                 case 2:
+                    sw.Restart();
                     Console.WriteLine("Виконую завдання 2");
                     Task2_2();
+                    sw.Stop();
                     break;
                 case 0:
                     Console.WriteLine("Повертаємося в меню.");
                     break;
                 default:
-                    Console.WriteLine("Команда '{0}' не розпізнана. Зробіь, будь ласка, вибір із 1, 2, 3, 4, 0.", choice);
+                    Console.WriteLine("Команда '{0}' не розпізнана. Зробіь, будь ласка, вибір із 1, 2, 0.", choice);
                     break;
             }
 

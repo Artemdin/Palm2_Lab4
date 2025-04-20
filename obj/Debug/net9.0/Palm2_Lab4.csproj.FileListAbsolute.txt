@@ -12,3 +12,4 @@ C:\Users\Asus\source\repos\Palm2_Lab4\Palm2_Lab4\obj\Debug\net9.0\refint\Palm2_L
 C:\Users\Asus\source\repos\Palm2_Lab4\Palm2_Lab4\obj\Debug\net9.0\Palm2_Lab4.pdb
 C:\Users\Asus\source\repos\Palm2_Lab4\Palm2_Lab4\obj\Debug\net9.0\Palm2_Lab4.genruntimeconfig.cache
 C:\Users\Asus\source\repos\Palm2_Lab4\Palm2_Lab4\obj\Debug\net9.0\ref\Palm2_Lab4.dll
+C:\Users\Asus\source\repos\Palm2_Lab4\Palm2_Lab4\obj\Debug\net9.0\Palm2_Lab4.sourcelink.json
