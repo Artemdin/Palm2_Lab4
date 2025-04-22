@@ -192,15 +192,21 @@ class Program
             switch (choice)
             {
                 case 1:
-                    sw.Restart();
+                    
                     Console.WriteLine("Виконую завдання 1");
-                    Task2_1();
+                    Console.WriteLine("Введіть літери!");
+                    string input = Console.ReadLine();
+                    sw.Restart();
+                    Task2_1(input);
                     sw.Stop();
                     break;
                 case 2:
-                    sw.Restart();
+                    
                     Console.WriteLine("Виконую завдання 2");
-                    Task2_2();
+                    Console.WriteLine("Введіть літери!");
+                    string input1 = Console.ReadLine();
+                    sw.Restart();
+                    Task2_2(input1);
                     sw.Stop();
                     break;
                 case 0:
@@ -211,6 +217,7 @@ class Program
                     break;
             }
 
+            Console.WriteLine($"Час виконання: {sw} мс");
             Console.WriteLine("____________________________________________________________________________________________________________________");
         } while (choice != 0);
 
@@ -223,13 +230,42 @@ class Program
 
     }
 
-static void Task2_1()
+static void Task2_1(string input)
     {
 
-        string input = Console.ReadLine();
         string result = "";
 
         foreach (char c in input)
+        {
+            if ("RST".Contains(c)) result += (char)(c - 7);
+            else if ("KLM".Contains(c)) result += (char)(c + 7);
+            else result += c;
+        }
+        Console.WriteLine("Результат: ");
+        Console.WriteLine(result);
+
+    }
+
+    static void Task2_2(string input)
+    {
+
+        
+       StringBuilder str = new StringBuilder();
+
+        foreach (char c in input)
+        {
+            if ("RST".Contains(c)) str.Append( (char)(c - 7));
+            else if ("KLM".Contains(c)) str.Append((char)(c + 7));
+            else str.Append(c);
+        }
+
+        Console.WriteLine("Результат: ");
+        Console.WriteLine(str.ToString());
+
+    }
+
+}
+/*   foreach (char c in input)
         {
             if (c == 'R') result += 'K';
             else if (c == 'S') result += 'L';
@@ -238,19 +274,8 @@ static void Task2_1()
             else if (c == 'L') result += 'S';
             else if (c == 'M') result += 'T';
             else result += c; 
-        }
-        Console.WriteLine("Результат: ");
-        Console.WriteLine(result);
-
-    }
-
-    static void Task2_2()
-    {
-
-        string input = Console.ReadLine();
-       StringBuilder str = new StringBuilder();
-
-        foreach (char c in input)
+        }*/
+/* foreach (char c in input)
         {
             if (c == 'R') str.Append('K');
             else if (c == 'S') str.Append('L');
@@ -259,10 +284,4 @@ static void Task2_1()
             else if (c == 'L') str.Append('S');
             else if (c == 'M') str.Append('T');
             else str.Append(c);
-        }
-        Console.WriteLine("Результат: ");
-        Console.WriteLine(str.ToString());
-
-    }
-
-}
+        }*/
