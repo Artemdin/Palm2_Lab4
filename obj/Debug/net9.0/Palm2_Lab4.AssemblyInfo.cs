@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Palm2_Lab4")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ab485566e2dc06f228bf827f2b8f1b516f57e8c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb0f918bfdf313126679c902cf212226323e8866")]
 [assembly: System.Reflection.AssemblyProductAttribute("Palm2_Lab4")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Palm2_Lab4")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

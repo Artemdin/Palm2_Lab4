@@ -159,11 +159,11 @@ class Program
     {
 
         StringBuilder str = new StringBuilder();
-
-        for (int i = 1; i <= n; i++)
+        for (int i = n; i >= 1; i--)
         {
-            str.Insert(0, $"{i} ");
+            str.Insert(0, i + " ");
         }
+    
 
         string result = str.ToString();
         Console.WriteLine(result);
